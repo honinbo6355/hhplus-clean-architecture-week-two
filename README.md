@@ -9,7 +9,7 @@
 
 ### - 특강 신청 API
 
-<img width="458" alt="image" src="https://github.com/honinbo6355/hhplus-clean-architecture-week-two/assets/29749722/a10441be-a3bc-4df2-bc89-c9f702f28423">
+<img width="511" alt="image" src="https://github.com/honinbo6355/hhplus-clean-architecture-week-two/assets/29749722/96507d6b-4998-4d48-8314-31ea3c023e34">
 
 ### - 특강 신청 완료 여부 조회 API
 
