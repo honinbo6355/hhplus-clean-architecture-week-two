@@ -19,6 +19,11 @@ public class Lecture extends BaseTimeEntity {
     private LocalDateTime startsAt;
     private long reservedCount;
 
+    public Lecture(LocalDateTime startsAt, long reservedCount) {
+        this.startsAt = startsAt;
+        this.reservedCount = reservedCount;
+    }
+
     public void increaseReservedCount() {
         reservedCount += 1;
     }

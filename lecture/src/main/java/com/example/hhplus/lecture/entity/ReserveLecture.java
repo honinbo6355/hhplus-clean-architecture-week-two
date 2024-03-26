@@ -23,6 +23,7 @@ public class ReserveLecture extends BaseTimeEntity {
     }
 
     public ReserveLecture(Long id, Long userId, Long lectureId) {
+        this.id = id;
         this.userId = userId;
         this.lectureId = lectureId;
     }
