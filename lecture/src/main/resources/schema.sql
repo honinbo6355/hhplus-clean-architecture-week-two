@@ -1,5 +1,6 @@
 drop table if exists test.reserve_lecture;
 drop table if exists test.lecture;
+drop table if exists test.idempotent_keys;
 
 create table if not exists test.reserve_lecture
 (
@@ -18,3 +19,5 @@ create table if not exists test.lecture
     created_at timestamp default current_timestamp not null,
     updated_at timestamp default current_timestamp not null
 );
+
+create unique index reserve_lecture_unique_idx on test.reserve_lecture(user_id, lecture_id);

@@ -1,12 +1,12 @@
 package com.example.hhplus.lecture.service;
 
-import com.example.hhplus.lecture.dto.ReserveLectureRequestDto;
 import com.example.hhplus.lecture.dto.ReserveLectureResponseDto;
 import com.example.hhplus.lecture.dto.ReserveStatus;
 import com.example.hhplus.lecture.entity.Lecture;
 import com.example.hhplus.lecture.entity.ReserveLecture;
 import com.example.hhplus.lecture.exception.CustomException;
 import com.example.hhplus.lecture.exception.ErrorCode;
+import com.example.hhplus.lecture.repository.LectureRepository;
 import com.example.hhplus.lecture.repository.ReserveLectureRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class LectureService {
     private final ReserveLectureRepository reserveLectureRepository;
+    private final LectureRepository lectureRepository;
 
     @Transactional
     public ReserveLectureResponseDto reserve(Long userId, Long lectureId) {
@@ -27,7 +28,7 @@ public class LectureService {
             throw new CustomException(ErrorCode.ALREADY_RESERVED_USER);
         }
 
-        Lecture lecture = reserveLectureRepository.findById(lectureId)
+        Lecture lecture = lectureRepository.findById(lectureId)
                 .orElseThrow(NullPointerException::new);
 
         if (lecture.getReservedCount() >= MAX_RESERVE_SIZE) {
@@ -35,7 +36,8 @@ public class LectureService {
         }
         lecture.increaseReservedCount();
 
-        reserveLectureRepository.save(lecture);
+        lectureRepository.save(lecture);
+
         return new ReserveLectureResponseDto(reserveLectureRepository.save(new ReserveLecture(userId, lectureId)));
     }
 

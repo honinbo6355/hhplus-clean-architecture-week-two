@@ -22,18 +22,9 @@ import java.util.Optional;
 public class ReserveLectureRepositoryImpl implements ReserveLectureRepository {
 
     private final ReserveLectureJpaRepository reserveLectureJpaRepository;
-    private final LectureJpaRepository lectureJpaRepository;
 
     public Optional<ReserveLecture> findByUserId(Long userId) {
         return reserveLectureJpaRepository.findByUserId(userId);
-    }
-
-    public Optional<Lecture> findById(Long lectureId) {
-        return lectureJpaRepository.selectById(lectureId);
-    }
-
-    public Lecture save(Lecture lecture) {
-        return lectureJpaRepository.save(lecture);
     }
 
     public ReserveLecture save(ReserveLecture reserveLecture) {
