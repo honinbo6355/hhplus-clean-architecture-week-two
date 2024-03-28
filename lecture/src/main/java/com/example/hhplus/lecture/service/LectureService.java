@@ -63,11 +63,16 @@ public class LectureService {
 
     @Transactional(readOnly = true)
     public List<LectureDto> getAvailableLectures(Long userId) {
-        List<Long> reservedLectureDetailIds = reserveLectureRepository.findReservedLectures(userId)
+        // 신청한 행사 리스트 아이디 추출
+        List<Long> reservedLectureDetailIds = reserveLectureRepository.findList(userId)
                 .stream()
                 .map(ReserveLecture::getLectureDetailId)
                 .collect(Collectors.toList());
+
+        // 모든 행사 상세 정보 조회
         List<LectureDetail> lectureDetails = lectureDetailRepository.findAll();
+
+        // 이미 신청한 행사를 제외한 리스트 추출
         List<LectureDetail> filteredLectureDetails = lectureDetails.stream()
                 .filter(lectureDetail -> !reservedLectureDetailIds.contains(lectureDetail.getId()))
                 .collect(Collectors.toList());
@@ -76,7 +81,10 @@ public class LectureService {
 
         filteredLectureDetails.stream()
                 .forEach(lectureDetail -> {
+                    // 행사 신청 카운트 조회
                     LectureReservedCount lectureReservedCount = lectureReservedCountRepository.find(lectureDetail.getId());
+
+                    // 이미 마감했으면 제외
                     if (lectureReservedCount.isFinishedReserve(MAX_RESERVE_SIZE)) {
                         return;
                     }

@@ -26,7 +26,7 @@ public class ReserveLectureRepositoryImpl implements ReserveLectureRepository {
     }
 
     @Override
-    public List<ReserveLecture> findReservedLectures(Long userId) {
+    public List<ReserveLecture> findList(Long userId) {
         return reserveLectureJpaRepository.findByUserId(userId);
     }
 }
