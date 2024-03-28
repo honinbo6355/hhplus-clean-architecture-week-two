@@ -12,5 +12,5 @@ import java.util.Optional;
 public interface ReserveLectureRepository {
     Optional<ReserveLecture> find(Long userId, Long lectureDetailId);
     ReserveLecture save(ReserveLecture reserveLecture);
-    List<ReserveLecture> findReservedLectures(Long userId);
+    List<ReserveLecture> findList(Long userId);
 }

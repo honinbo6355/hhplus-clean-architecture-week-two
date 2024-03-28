@@ -38,4 +38,5 @@ create table if not exists test.lecture_reserved_count
     updated_at timestamp default current_timestamp not null
 );
 
+// 중복 신청 방지를 위해 (user_id, lecture_detail_id) 유니크 키 생성
 create unique index reserve_lecture_unique_idx on test.reserve_lecture(user_id, lecture_detail_id);

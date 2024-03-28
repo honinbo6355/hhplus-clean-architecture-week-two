@@ -28,9 +28,4 @@ public class LectureReservedCount extends BaseTimeEntity {
     public void increaseCount() {
         count += 1;
     }
-
-    public LectureReservedCount(Long lectureDetailId, long count) {
-        this.lectureDetailId = lectureDetailId;
-        this.count = count;
-    }
 }
