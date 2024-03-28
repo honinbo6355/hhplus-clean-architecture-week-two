@@ -48,8 +48,6 @@
 - 정확하게 30 명의 사용자에게만 특강을 제공할 방법을 고민해 봅니다.
 - 같은 사용자에게 여러 번의 특강 슬롯이 제공되지 않도록 제한할 방법을 고민해 봅니다.
 
-
-
 ## DB schema
 <img width="594" alt="image" src="https://github.com/honinbo6355/hhplus-clean-architecture-week-two/assets/29749722/619951e5-8830-46ca-a60f-8cbf455678f0">
 
