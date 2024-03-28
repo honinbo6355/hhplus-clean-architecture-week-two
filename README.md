@@ -1,6 +1,7 @@
 # hhplus-clean-architecture-week-two
 항해 플러스 2주차 과제 - 클린 아키텍처
 
+<<<<<<< HEAD
 ## Description
 
 - `특강 신청 서비스`를 구현해 봅니다.
@@ -71,3 +72,5 @@
 
 <img width="496" alt="image" src="https://github.com/honinbo6355/hhplus-clean-architecture-week-two/assets/29749722/a60b5eba-ed20-46fd-8f85-d2c362668633">
 
+=======
+>>>>>>> 38fef0bcb7b41c4dd640c773e4e7e5e891179879
