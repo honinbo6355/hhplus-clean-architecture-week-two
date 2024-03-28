@@ -1,0 +1,33 @@
+1711384940286|157|rollback|connection 75|url jdbc:h2:~/test||
+1711384940286|166|rollback|connection 76|url jdbc:h2:~/test||
+1711384940290|169|rollback|connection 77|url jdbc:h2:~/test||
+1711385071146|103|statement|connection 50|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385071161|99|statement|connection 52|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385071165|378|statement|connection 31|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385071167|250|statement|connection 46|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385071169|315|statement|connection 40|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385071172|324|statement|connection 36|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385071177|6|rollback|connection 53|url jdbc:h2:~/test||
+1711385071178|6|rollback|connection 42|url jdbc:h2:~/test||
+1711385071187|23|rollback|connection 47|url jdbc:h2:~/test||
+1711385071194|33|rollback|connection 51|url jdbc:h2:~/test||
+1711385071198|6|rollback|connection 46|url jdbc:h2:~/test||
+1711385071200|7|rollback|connection 31|url jdbc:h2:~/test||
+1711385071201|8|rollback|connection 52|url jdbc:h2:~/test||
+1711385071201|16|rollback|connection 40|url jdbc:h2:~/test||
+1711385071204|7|rollback|connection 50|url jdbc:h2:~/test||
+1711385071205|1|rollback|connection 36|url jdbc:h2:~/test||
+1711385146895|154|statement|connection 43|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385146900|77|statement|connection 49|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385146913|111|statement|connection 46|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385146926|295|statement|connection 39|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385146940|138|statement|connection 47|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385146941|477|statement|connection 24|url jdbc:h2:~/test|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=? for update|select rl1_0.id,rl1_0.created_at,rl1_0.lecture_id,rl1_0.updated_at,rl1_0.user_id from test.reserve_lecture rl1_0 where rl1_0.user_id=1 for update
+1711385146951|22|rollback|connection 35|url jdbc:h2:~/test||
+1711385146952|22|rollback|connection 46|url jdbc:h2:~/test||
+1711385146955|26|rollback|connection 44|url jdbc:h2:~/test||
+1711385146956|8|rollback|connection 43|url jdbc:h2:~/test||
+1711385146957|9|rollback|connection 49|url jdbc:h2:~/test||
+1711385146985|0|rollback|connection 24|url jdbc:h2:~/test||
+1711385146985|0|rollback|connection 47|url jdbc:h2:~/test||
+1711385146986|1|rollback|connection 39|url jdbc:h2:~/test||

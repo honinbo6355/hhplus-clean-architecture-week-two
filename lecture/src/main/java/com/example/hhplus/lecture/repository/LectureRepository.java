@@ -5,6 +5,5 @@ import com.example.hhplus.lecture.entity.Lecture;
 import java.util.Optional;
 
 public interface LectureRepository {
-    Optional<Lecture> findById(Long lectureId);
-    Lecture save(Lecture lecture);
+    Optional<Lecture> find(Long lectureId);
 }

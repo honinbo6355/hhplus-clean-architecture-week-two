@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface ReserveLectureRepository {
-    Optional<ReserveLecture> findByUserId(Long userId);
+    Optional<ReserveLecture> find(Long userId, Long lectureDetailId);
     ReserveLecture save(ReserveLecture reserveLecture);
+    List<ReserveLecture> findReservedLectures(Long userId);
 }

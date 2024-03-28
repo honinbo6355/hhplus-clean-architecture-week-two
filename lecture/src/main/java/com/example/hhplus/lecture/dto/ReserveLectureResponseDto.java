@@ -7,11 +7,11 @@ import lombok.Getter;
 public class ReserveLectureResponseDto {
     private Long id;
     private Long userId;
-    private Long lectureId;
+    private Long lectureDetailId;
 
     public ReserveLectureResponseDto(ReserveLecture reserveLecture) {
         this.id = reserveLecture.getId();
         this.userId = reserveLecture.getUserId();
-        this.lectureId = reserveLecture.getLectureId();
+        this.lectureDetailId = reserveLecture.getLectureDetailId();
     }
 }

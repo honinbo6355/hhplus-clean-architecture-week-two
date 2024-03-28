@@ -15,16 +15,16 @@ public class ReserveLecture extends BaseTimeEntity {
     private Long id;
 
     private Long userId;
-    private Long lectureId;
+    private Long lectureDetailId;
 
-    public ReserveLecture(Long userId, Long lectureId) {
+    public ReserveLecture(Long userId, Long lectureDetailId) {
         this.userId = userId;
-        this.lectureId = lectureId;
+        this.lectureDetailId = lectureDetailId;
     }
 
-    public ReserveLecture(Long id, Long userId, Long lectureId) {
+    public ReserveLecture(Long id, Long userId, Long lectureDetailId) {
         this.id = id;
         this.userId = userId;
-        this.lectureId = lectureId;
+        this.lectureDetailId = lectureDetailId;
     }
 }

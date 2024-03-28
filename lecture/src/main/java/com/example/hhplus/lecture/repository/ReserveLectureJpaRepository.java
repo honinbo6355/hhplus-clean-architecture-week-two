@@ -7,9 +7,11 @@ import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public interface ReserveLectureJpaRepository extends JpaRepository<ReserveLecture, Long> {
-    Optional<ReserveLecture> findByUserId(Long userId);
+    Optional<ReserveLecture> findByUserIdAndLectureDetailId(Long userId, Long lectureDetailId);
+    List<ReserveLecture> findByUserId(Long userId);
 }
